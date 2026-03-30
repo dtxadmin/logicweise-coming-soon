@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="76" viewBox="0 0 320 76" role="img" aria-label="Logic Weise LLC logo">
+  <rect width="320" height="76" rx="8" fill="none"/>
+  <g fill="#0b0d12">
+    <rect x="6" y="14" width="48" height="48" rx="8" fill="#0b0d12"/>
+    <path d="M20 26h8v24h18v8H20z" fill="#ffffff"/>
+    <path d="M34 26h8v16h-8z" fill="#4a87f5"/>
+  </g>
+  <text x="66" y="41" font-family="'Barlow Condensed', Arial, sans-serif" font-size="30" font-weight="700" fill="#0b0d12" letter-spacing="0.5">LOGIC WEISE</text>
+  <text x="66" y="58" font-family="'Barlow', Arial, sans-serif" font-size="10" font-weight="600" fill="#2e6fdc" letter-spacing="2.1">COMMERCIAL INTEGRATION</text>
+</svg>
