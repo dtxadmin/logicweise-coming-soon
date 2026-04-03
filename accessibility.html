@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Accessibility | Logic Weise LLC</title>
+  <meta name="description" content="Accessibility statement for Logic Weise LLC website." />
+  <link rel="canonical" href="https://logicweise.com/accessibility.html" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="topbar">
+        <div class="container--wide topbar-inner">
+          <p class="topbar-copy">Commercial technology integration for Dallas-Fort Worth and North Texas facilities</p>
+          <div class="topbar-links">
+            <a href="tel:(945)-214-6222">(945)-214-6222</a>
+            <a href="./index.html#consultation">Request consultation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container--wide nav-row">
+        <a href="./index.html" class="brandmark" aria-label="Logic Weise LLC - Home">
+          <img
+            src="./logo.png"
+            alt="Logic Weise LLC - Commercial Technology Integration"
+            width="240"
+            height="57"
+          />
+        </a>
+
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./about.html">About</a>
+          <a href="./index.html#services">Services</a>
+          <a href="./index.html#industries">Industries</a>
+          <a href="./index.html#why-logic-weise">Why Logic Weise</a>
+          <a href="./index.html#consultation">Consultation</a>
+          <a href="./privacy.html">Privacy Policy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-page">
+      <div class="container--wide legal-shell">
+        <div class="legal-hero">
+          <a href="./index.html" class="legal-breadcrumb">Back to home</a>
+          <h1 class="legal-title">Accessibility</h1>
+          <p class="legal-meta">Updated: March 30, 2026</p>
+        </div>
+
+        <article class="legal-article">
+          <section>
+            <h2>Our Commitment</h2>
+            <p>
+              Logic Weise LLC is committed to making this website more accessible and usable for visitors with a wide
+              range of abilities and assistive technologies. We want people to be able to learn about our services,
+              review our contact information, and request a consultation without unnecessary barriers.
+            </p>
+          </section>
+
+          <section>
+            <h2>Accessibility Efforts</h2>
+            <p>We are working to support accessibility through steps such as:</p>
+            <ul class="legal-list">
+              <li>Using meaningful headings, readable color contrast, and consistent navigation.</li>
+              <li>Providing text alternatives for important images and link destinations.</li>
+              <li>Supporting keyboard navigation for core page content and links.</li>
+              <li>Reviewing content structure as the site grows and changes.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Third-Party Content</h2>
+            <p>
+              Some functionality on this site may rely on third-party tools or embedded content, including the
+              consultation form provider. While we aim to choose tools that support accessibility, we may not control
+              every aspect of third-party interfaces.
+            </p>
+          </section>
+
+          <section>
+            <h2>Need Assistance?</h2>
+            <p>
+              If you have trouble using this website or need information in another format, please contact us and tell
+              us what page or feature you were trying to use.
+            </p>
+            <p>
+              Email: <a href="mailto:DTXadmin@LogicWeise.com">DTXadmin@LogicWeise.com</a><br />
+              Phone: <a href="tel:(945)-214-6222">(945)-214-6222</a>
+            </p>
+          </section>
+
+          <section>
+            <h2>Ongoing Improvement</h2>
+            <p>
+              Accessibility is an ongoing process. We may update this statement as the website evolves and as we make
+              further improvements to usability, structure, and compatibility.
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container--wide">
+        <div class="footer-row">
+          <a href="./index.html" class="footer-logo" aria-label="Logic Weise LLC - Home">
+            <img src="./logo.png" alt="Logic Weise LLC" width="130" height="31" />
+          </a>
+
+          <nav class="footer-nav" aria-label="Footer">
+            <a href="./about.html">About</a>
+            <a href="./index.html#services">Services</a>
+            <a href="./index.html#industries">Industries</a>
+            <a href="./index.html#consultation">Consultation</a>
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="./accessibility.html">Accessibility</a>
+          </nav>
+
+          <div class="footer-contact">
+            <span>Logic Weise LLC - Dallas-Fort Worth, TX</span>
+            <a href="tel:(945)-214-6222">(945)-214-6222</a>
+            <a href="mailto:DTXadmin@LogicWeise.com">DTXadmin@LogicWeise.com</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-trust" role="list" aria-label="Company trust signals">
+            <span class="trust-item" role="listitem"><span class="trust-check" aria-hidden="true">&#10003;</span> Commercial technology integrator</span>
+            <span class="trust-item" role="listitem"><span class="trust-check" aria-hidden="true">&#10003;</span> Dallas-Fort Worth and North Texas</span>
+            <span class="trust-item" role="listitem"><span class="trust-check" aria-hidden="true">&#10003;</span> Licensed and insured</span>
+            <span class="trust-item" role="listitem"><span class="trust-check" aria-hidden="true">&#10003;</span> Responds within 1 business day</span>
+          </div>
+
+          <p class="footer-copy">&copy; <span id="yr"></span> Logic Weise LLC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
