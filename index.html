@@ -598,9 +598,42 @@
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
 
+    const root = document.documentElement;
+    const siteHeader = document.querySelector('.site-header');
     const consultationSection = document.getElementById('consultation');
     const pipedriveRoot = document.querySelector('[data-pipedrive-root]');
     const pipedriveLoaderUrl = 'https://webforms.pipedrive.com/f/loader';
+    const anchorOffsetPadding = 16;
+
+    const getHeaderOffset = () => {
+      if (!siteHeader) {
+        return anchorOffsetPadding;
+      }
+
+      return Math.ceil(siteHeader.getBoundingClientRect().height + anchorOffsetPadding);
+    };
+
+    const syncHeaderOffset = () => {
+      root.style.setProperty('--header-offset', `${getHeaderOffset()}px`);
+    };
+
+    const scrollToHashTarget = (hash, behavior = 'smooth') => {
+      if (!hash || hash === '#') {
+        return;
+      }
+
+      const target = document.getElementById(hash.slice(1));
+
+      if (!target) {
+        return;
+      }
+
+      const targetTop = window.scrollY + target.getBoundingClientRect().top - getHeaderOffset();
+      window.scrollTo({
+        top: Math.max(0, targetTop),
+        behavior
+      });
+    };
 
     const loadPipedriveForm = () => {
       if (!consultationSection || !pipedriveRoot || pipedriveRoot.dataset.loaded === 'true') {
@@ -635,6 +668,45 @@
       } else {
         loadPipedriveForm();
       }
+    }
+
+    syncHeaderOffset();
+
+    window.addEventListener('resize', syncHeaderOffset);
+
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest('a[href^="#"]');
+
+      if (!link) {
+        return;
+      }
+
+      const hash = link.getAttribute('href');
+
+      if (!hash || hash === '#') {
+        return;
+      }
+
+      const target = document.getElementById(hash.slice(1));
+
+      if (!target) {
+        return;
+      }
+
+      event.preventDefault();
+      history.pushState(null, '', hash);
+      scrollToHashTarget(hash);
+    });
+
+    window.addEventListener('hashchange', () => {
+      scrollToHashTarget(window.location.hash);
+    });
+
+    if (window.location.hash) {
+      window.requestAnimationFrame(() => {
+        syncHeaderOffset();
+        scrollToHashTarget(window.location.hash, 'auto');
+      });
     }
   </script>
 </body>
