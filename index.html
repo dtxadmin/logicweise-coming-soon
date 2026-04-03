@@ -15,15 +15,16 @@
   <meta property="og:site_name" content="Logic Weise LLC" />
   <meta property="og:title" content="Logic Weise LLC — Commercial Technology Integrators | Dallas–Fort Worth" />
   <meta property="og:description" content="Enterprise-grade commercial security, structured cabling, access control, CCTV, fire alarm coordination, and technology infrastructure in Dallas–Fort Worth." />
-  <meta property="og:image" content="https://logicweise.com/og-image.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content="https://logicweise.com/logo.png" />
+  <meta property="og:image:width" content="2435" />
+  <meta property="og:image:height" content="532" />
+  <meta property="og:image:alt" content="Logic Weise LLC logo" />
   <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Logic Weise LLC — Commercial Technology Integrators | DFW" />
   <meta name="twitter:description" content="Enterprise-grade commercial security and technology infrastructure for Dallas–Fort Worth facilities." />
-  <meta name="twitter:image" content="https://logicweise.com/og-image.jpg" />
+  <meta name="twitter:image" content="https://logicweise.com/logo.png" />
 
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Logic Weise LLC" />
@@ -34,20 +35,46 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": "https://logicweise.com/#business",
     "name": "Logic Weise LLC",
-    "url": "https://logicweise.com",
-    "logo": "https://logicweise.com/logo.png",
-    "image": "https://logicweise.com/og-image.jpg",
+    "url": "https://logicweise.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://logicweise.com/logo.png",
+      "width": 2435,
+      "height": 532
+    },
+    "image": "https://logicweise.com/logo.png",
     "description": "Logic Weise provides commercial technology integration services including security systems, access control, CCTV, fire alarm coordination, structured cabling, and technology infrastructure for commercial facilities in Dallas–Fort Worth, Texas.",
-    "telephone": "(945)-214-6222",
+    "telephone": "+1-945-214-6222",
     "email": "DTXadmin@LogicWeise.com",
     "address": {
       "@type": "PostalAddress",
+      "addressCountry": "US",
       "addressLocality": "Dallas",
-      "addressRegion": "TX",
-      "addressCountry": "US"
+      "addressRegion": "TX"
     },
-    "areaServed": {
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Dallas-Fort Worth"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "North Texas"
+      }
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "telephone": "+1-945-214-6222",
+        "email": "DTXadmin@LogicWeise.com",
+        "areaServed": "US-TX",
+        "availableLanguage": "en"
+      }
+    ],
+    "serviceArea": {
       "@type": "GeoCircle",
       "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 32.7767, "longitude": -96.7970 },
       "geoRadius": "150000"
@@ -83,27 +110,30 @@
     "name": "Logic Weise LLC",
     "url": "https://logicweise.com/",
     "description": "Logic Weise commercial technology integrators for Dallas–Fort Worth facilities.",
+    "about": {
+      "@id": "https://logicweise.com/#business"
+    },
     "publisher": {
-      "@type": "Organization",
-      "name": "Logic Weise LLC",
-      "logo": { "@type": "ImageObject", "url": "https://logicweise.com/logo.png" }
+      "@id": "https://logicweise.com/#business"
     }
   }
   </script>
 
-  <link rel="stylesheet" href="./styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
-<body>
+<body class="has-mobile-cta">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="site-shell">
     <header class="site-header">
       <div class="topbar">
         <div class="container--wide topbar-inner">
           <p class="topbar-copy">Commercial technology integration for Dallas-Fort Worth and North Texas facilities</p>
           <div class="topbar-links">
-            <a href="tel:(945)-214-6222">(945)-214-6222</a>
+            <a href="tel:+19452146222">(945)-214-6222</a>
             <a href="#consultation">Request consultation</a>
           </div>
         </div>
@@ -130,7 +160,7 @@
       </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <section class="hero" aria-labelledby="hero-headline">
         <div class="container--wide hero-grid">
           <div class="hero-copy">
@@ -457,14 +487,14 @@
                 <div class="direct" id="contact">
                   <p class="direct-label">Prefer to reach us directly</p>
 
-                  <a href="tel:(945)-214-6222" class="direct-link" aria-label="Call Logic Weise">
+                  <a href="tel:+19452146222" class="direct-link" aria-label="Call Logic Weise">
                     <span class="direct-link-icon" aria-hidden="true">&#128222;</span>
                     <span class="direct-link-text">(945)-214-6222</span>
                   </a>
 
-                  <a href="/cdn-cgi/l/email-protection#db899e8b979a989e848c928f93849e969a9297849a9f9f899e8888" class="direct-link" aria-label="Email Logic Weise">
+                  <a href="mailto:DTXadmin@LogicWeise.com" class="direct-link" aria-label="Email Logic Weise">
                     <span class="direct-link-icon" aria-hidden="true">&#9993;</span>
-                    <span class="direct-link-text"><span class="__cf_email__" data-cfemail="e2a6b6baa3868f8b8ca2ae8d858b81b5878b9187cc818d8f">[email&#160;protected]</span></span>
+                    <span class="direct-link-text">DTXadmin@LogicWeise.com</span>
                   </a>
                 </div>
               </div>
@@ -485,9 +515,23 @@
                 </div>
 
                 <div class="iframe-shell">
-                  <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/5VFIL2r43RVtbdaBrhQkq2bzQFRSCJ6IbthyaHGYUWPhN5v0vMzKQTym4o294YJNn5">
-                    <script src="https://webforms.pipedrive.com/f/loader"></script>
+                  <div
+                    class="pipedriveWebForms"
+                    data-pipedrive-root
+                    data-pd-webforms="https://webforms.pipedrive.com/f/5VFIL2r43RVtbdaBrhQkq2bzQFRSCJ6IbthyaHGYUWPhN5v0vMzKQTym4o294YJNn5"
+                    aria-live="polite"
+                  ></div>
+                </div>
+
+                <div class="form-fallback">
+                  <p>If the consultation form does not load, reach us directly and we will still respond within one business day.</p>
+                  <div class="form-fallback-actions">
+                    <a href="mailto:DTXadmin@LogicWeise.com" class="hero-cta hero-cta--secondary">Email Logic Weise</a>
+                    <a href="tel:+19452146222" class="hero-cta hero-cta--secondary">Call (945)-214-6222</a>
                   </div>
+                  <noscript>
+                    <p>JavaScript is disabled, so the embedded form is unavailable. Email <a href="mailto:DTXadmin@LogicWeise.com">DTXadmin@LogicWeise.com</a> or call <a href="tel:+19452146222">(945)-214-6222</a>.</p>
+                  </noscript>
                 </div>
 
                 <div class="form-card-foot" aria-label="Form trust indicators">
@@ -532,8 +576,8 @@
 
           <div class="footer-contact">
             <span>Logic Weise LLC - Dallas-Fort Worth, TX</span>
-            <a href="tel:(945)-214-6222">(945)-214-6222</a>
-            <a href="/cdn-cgi/l/email-protection#3a687f6a767b797f656d736e72657f777b7376657b7e7e687f6969"><span class="__cf_email__" data-cfemail="4105151900252c282f010d2e26282216242832246f222e2c">[email&#160;protected]</span></a>
+            <a href="tel:+19452146222">(945)-214-6222</a>
+            <a href="mailto:DTXadmin@LogicWeise.com">DTXadmin@LogicWeise.com</a>
           </div>
         </div>
 
@@ -551,9 +595,47 @@
     </footer>
   </div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
+
+    const consultationSection = document.getElementById('consultation');
+    const pipedriveRoot = document.querySelector('[data-pipedrive-root]');
+    const pipedriveLoaderUrl = 'https://webforms.pipedrive.com/f/loader';
+
+    const loadPipedriveForm = () => {
+      if (!consultationSection || !pipedriveRoot || pipedriveRoot.dataset.loaded === 'true') {
+        return;
+      }
+
+      pipedriveRoot.dataset.loaded = 'true';
+      consultationSection.dataset.formState = 'loading';
+
+      const script = document.createElement('script');
+      script.src = pipedriveLoaderUrl;
+      script.async = true;
+      script.onload = () => {
+        consultationSection.dataset.formState = 'ready';
+      };
+      script.onerror = () => {
+        consultationSection.dataset.formState = 'error';
+      };
+      pipedriveRoot.appendChild(script);
+    };
+
+    if (consultationSection && pipedriveRoot) {
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) {
+            loadPipedriveForm();
+            observer.disconnect();
+          }
+        }, { rootMargin: '300px 0px' });
+
+        observer.observe(consultationSection);
+      } else {
+        loadPipedriveForm();
+      }
+    }
   </script>
 </body>
 </html>
