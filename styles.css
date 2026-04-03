@@ -574,6 +574,11 @@ main [id] {
 .context-card {
   padding: 1.45rem;
 }
+.context-intro {
+  margin-top: 0.35rem;
+  color: var(--text-2);
+  font-size: 0.92rem;
+}
 .reasons {
   display: grid;
   gap: 1rem;
